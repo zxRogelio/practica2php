@@ -44,7 +44,6 @@
             function decimal_a_hexadecimal($decimal) {
                 return dechex($decimal);
             }
-
             if ($conversion == "binario") {
                 $resultado = decimal_a_binario($decimal);
                 echo "<div class='result'>El número decimal $decimal en binario es: $resultado</div>";
@@ -62,5 +61,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+
+
+
 </body>
 </html>
