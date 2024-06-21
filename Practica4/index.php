@@ -41,6 +41,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet" href="estilos.css">
     <title>Formulario de identificacion</title>
 </head>
@@ -54,18 +56,28 @@
                     <form method="post" action="" class="needs-validation" novalidate>
                         <div class="form-group">
                             <label for="email">Correo electrónico:</label>
-                            <input type="email" id="email" name="email" class="form-control" value="<?php echo htmlspecialchars($email);?>" required>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                <input type="email" id="email" name="email" class="form-control" value="<?php echo htmlspecialchars($email);?>" required>
+                            </div>
                             <div class="error">* <?php echo $email_err;?></div>
                         </div>
+                        
                         <div class="form-group">
                             <label for="password1">Contraseña:</label>
-                            <input type="password" id="password1" name="password1" class="form-control" pattern=".{8,}" title="La contraseña debe tener al menos 8 caracteres" required>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                <input type="password" id="password1" name="password1" class="form-control" pattern=".{8,}" title="La contraseña debe tener al menos 8 caracteres" required>
+                            </div>
                             <div class="error">* <?php echo $password_err;?></div>
                         </div>
                         
                         <div class="form-group">
                             <label for="password2">Repetir contraseña:</label>
-                            <input type="password" id="password2" name="password2" class="form-control" pattern=".{8,}" title="La contraseña debe tener al menos 8 caracteres" required>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                <input type="password" id="password2" name="password2" class="form-control" pattern=".{8,}" title="La contraseña debe tener al menos 8 caracteres" required>
+                            </div>
                         </div>
                         
                         <div class="text-center">
