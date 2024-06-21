@@ -1,0 +1,40 @@
+.card-custom {
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-custom .card-body
+{
+    padding: 20px;
+}
+.error {
+    color: #FF0000;
+}
+body {
+    font-family: Arial, sans-serif; 
+    margin: 40px;
+    background-color: bisque;
+
+}
+.container {
+    max-width: 600px; 
+    height: 300px;
+    margin: auto; 
+    padding-top: 20px;
+    background-color: whitesmoke;
+}
+.form-group {
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.form-control {
+    border-radius: 5px;
+}
+.btn 
+{
+    border-radius: 2px; 
+    background-color: #007bff; 
+    color: white;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
